@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Cutie Pookie ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        radial-gradient(circle at 20% 10%, rgba(180,0,40,.18), transparent 30%),
+        radial-gradient(circle at 80% 50%, rgba(255,0,80,.10), transparent 30%),
+        #050505;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+        radial-gradient(circle, rgba(255,255,255,.7) 1px, transparent 1px);
+    background-size: 80px 80px;
+    opacity: .12;
+    z-index: -1;
+}
+
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+section {
+    padding: 100px 8%;
+    position: relative;
+}
+
+button {
+    font-family: inherit;
+}
+
+/* FLOATING HEARTS */
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    color: #ff174f;
+    font-size: 18px;
+    pointer-events: none;
+    animation: floatHeart 7s linear forwards;
+    z-index: 5;
+    opacity: .7;
+}
+
+@keyframes floatHeart {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    15% {
+        opacity: .8;
+    }
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 900px;
+    animation: heroIn 1.8s ease;
+}
+
+@keyframes heroIn {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.small-title {
+    color: #ff416c;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(60px, 12vw, 130px);
+    line-height: .8;
+    color: white;
+    text-shadow:
+        0 0 10px rgba(255,0,60,.4),
+        0 0 40px rgba(255,0,60,.25);
+}
+
+.hero h1 span {
+    color: #ff174f;
+}
+
+.hero-date {
+    margin-top: 35px;
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: #aaa;
+}
+
+.hero-subtitle {
+    margin: 18px auto 35px;
+    color: #cfcfcf;
+    font-size: 15px;
+    max-width: 500px;
+}
+
+.heart-main {
+    font-size: 55px;
+    margin-bottom: 15px;
+    animation: heartbeat 1.5s infinite;
+    filter: drop-shadow(0 0 20px #ff174f);
+}
+
+@keyframes heartbeat {
+    0%,100% { transform: scale(1); }
+    15% { transform: scale(1.2); }
+    30% { transform: scale(1); }
+    45% { transform: scale(1.15); }
+}
+
+.scroll-btn {
+    display: inline-block;
+    color: white;
+    border: 1px solid rgba(255,255,255,.25);
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.scroll-btn:hover {
+    background: #ff174f;
+    border-color: #ff174f;
+    transform: translateY(-3px);
+}
+
+/* TITLES */
+
+.section-title {
+    text-align: center;
+    font-size: clamp(42px, 6vw, 70px);
+    margin-bottom: 15px;
+}
+
+.section-title span {
+    color: #ff174f;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #999;
+    max-width: 650px;
+    margin: 0 auto 60px;
+    line-height: 1.8;
+}
+
+/* BEGINNING */
+
+.beginning-box {
+    max-width: 850px;
+    margin: auto;
+    border-left: 2px solid #ff174f;
+    padding-left: 35px;
+}
+
+.timeline-item {
+    margin-bottom: 55px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "♥";
+    position: absolute;
+    left: -51px;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    background: #080808;
+    border: 1px solid #ff174f;
+    color: #ff174f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.timeline-date {
+    color: #ff416c;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.timeline-item h3 {
+    font-size: 32px;
+    margin: 8px 0;
+}
+
+.timeline-item p {
+    color: #aaa;
+    line-height: 1.8;
+}
+
+/* BEFORE AFTER */
+
+.before-after {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.ba-card {
+    padding: 45px 30px;
+    background: linear-gradient(145deg,#0d0d0d,#070707);
+    border: 1px solid rgba(255,23,79,.25);
+    border-radius: 25px;
+    text-align: center;
+    transition: .4s;
+}
+
+.ba-card:hover {
+    transform: translateY(-8px);
+    border-color: #ff174f;
+    box-shadow: 0 15px 50px rgba(255,0,60,.12);
+}
+
+.ba-card .emoji {
+    font-size: 40px;
+}
+
+.ba-card h3 {
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.ba-card p {
+    color: #aaa;
+    line-height: 1.8;
+}
+
+/* LETTER */
+
+.letter {
+    max-width: 850px;
+    margin: auto;
+    background:
+        linear-gradient(145deg, rgba(255,23,79,.08), rgba(255,255,255,.02));
+    border: 1px solid rgba(255,23,79,.2);
+    border-radius: 30px;
+    padding: clamp(30px,6vw,70px);
+    box-shadow: 0 30px 80px rgba(0,0,0,.4);
+}
+
+.letter h3 {
+    color: #ff416c;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.letter p {
+    color: #d2d2d2;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.signature {
+    color: #ff174f;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    margin-top: 35px;
+}
+
+/* REASONS */
+
+.reasons {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 18px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.reason {
+    background: #090909;
+    border: 1px solid #1d1d1d;
+    border-radius: 20px;
+    padding: 28px;
+    transition: .3s;
+}
+
+.reason:hover {
+    border-color: #ff174f;
+    transform: translateY(-5px);
+}
+
+.reason-number {
+    color: #ff174f;
+    font-size: 13px;
+}
+
+.reason h3 {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.reason p {
+    color: #999;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* MEMORIES */
+
+.memories {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 35px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.memory {
+    background: #0b0b0b;
+    padding: 14px 14px 25px;
+    border: 1px solid #222;
+    box-shadow: 0 20px 40px rgba(0,0,0,.4);
+    transform: rotate(-1deg);
+    transition: .4s;
+}
+
+.memory:nth-child(even) {
+    transform: rotate(1deg);
+}
+
+.memory:hover {
+    transform: rotate(0) translateY(-8px);
+    border-color: #ff174f;
+}
+
+.memory img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    display: block;
+    background: linear-gradient(135deg,#180006,#090909);
+}
+
+.memory-info {
+    padding: 18px 8px 0;
+}
+
+.memory-info small {
+    color: #ff416c;
+    letter-spacing: 2px;
+}
+
+.memory-info h3 {
+    font-size: 28px;
+    margin: 5px 0;
+}
+
+.memory-info p {
+    color: #999;
+    font-size: 13px;
+}
+
+/* LITTLE THINGS */
+
+.little-things {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.little {
+    padding: 30px 15px;
+    text-align: center;
+    background: #090909;
+    border-radius: 20px;
+    border: 1px solid #1c1c1c;
+    transition: .3s;
+}
+
+.little:hover {
+    background: #110307;
+    border-color: #ff174f;
+}
+
+.little span {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.little p {
+    color: #bbb;
+    font-size: 13px;
+}
+
+/* READ WHEN */
+
+.read-grid {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 15px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.envelope {
+    background: linear-gradient(145deg,#111,#070707);
+    border: 1px solid #222;
+    padding: 25px 12px;
+    border-radius: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.envelope:hover {
+    transform: translateY(-7px);
+    border-color: #ff174f;
+}
+
+.envelope-icon {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.envelope p {
+    color: #ccc;
+    font-size: 12px;
+}
+
+/* MODAL */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.88);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    z-index: 100;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-box {
+    max-width: 600px;
+    width: 100%;
+    background: #0d0d0d;
+    border: 1px solid #ff174f;
+    border-radius: 25px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 80px rgba(255,0,60,.15);
+}
+
+.modal-box h3 {
+    font-size: 38px;
+    color: #ff416c;
+    margin-bottom: 20px;
+}
+
+.modal-box p {
+    color: #ccc;
+    line-height: 1.9;
+}
+
+.close {
+    margin-top: 25px;
+    background: transparent;
+    color: #ff416c;
+    border: 1px solid #ff174f;
+    padding: 10px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* MUSIC */
+
+.music-box {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    background: linear-gradient(145deg,#110307,#080808);
+    border: 1px solid rgba(255,23,79,.3);
+    border-radius: 30px;
+    padding: 50px 30px;
+}
+
+.disc {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle,#ff174f 0 12%,#090909 13% 20%,#ff174f 21% 23%,#090909 24% 40%,#ff174f 41% 43%,#090909 44%);
+    border: 5px solid #1d1d1d;
+    animation: spin 6s linear infinite;
+    animation-play-state: paused;
+}
+
+.disc.playing {
+    animation-play-state: running;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.music-box h3 {
+    font-size: 38px;
+    margin: 25px 0 5px;
+}
+
+.music-box p {
+    color: #999;
+}
+
+.music-btn {
+    margin-top: 25px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: none;
+    background: #ff174f;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    box-shadow: 0 0 30px rgba(255,23,79,.4);
+    transition: .3s;
+}
+
+.music-btn:hover {
+    transform: scale(1.08);
+}
+
+/* COUNTER */
+
+.counter {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    max-width: 900px;
+    margin: auto;
+    gap: 15px;
+}
+
+.time-box {
+    background: #090909;
+    border: 1px solid #222;
+    border-radius: 20px;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.time-box strong {
+    display: block;
+    font-family: 'Cormorant Garamond',serif;
+    font-size: 45px;
+    color: #ff174f;
+}
+
+.time-box span {
+    color: #777;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+/* QUIZ */
+
+.quiz {
+    max-width: 800px;
+    margin: auto;
+}
+
+.question {
+    background: #090909;
+    border: 1px solid #222;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.question h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.answer-btn {
+    background: #111;
+    color: #bbb;
+    border: 1px solid #222;
+    border-radius: 20px;
+    padding: 10px 18px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.answer-btn:hover {
+    color: white;
+    border-color: #ff174f;
+}
+
+.answer {
+    display: none;
+    margin-top: 15px;
+    color: #ff809d;
+    line-height: 1.7;
+}
+
+.answer.show {
+    display: block;
+}
+
+/* FUTURE */
+
+.future-box {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    padding: 70px 30px;
+    border-radius: 30px;
+    background: radial-gradient(circle at center,rgba(255,23,79,.12),transparent 60%);
+}
+
+.future-box h2 {
+    font-size: clamp(45px,7vw,75px);
+}
+
+.future-box p {
+    color: #aaa;
+    max-width: 600px;
+    margin: 25px auto;
+    line-height: 2;
+}
+
+/* FINAL */
+
+.final {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.final-content {
+    max-width: 800px;
+}
+
+.final h2 {
+    font-size: clamp(50px,8vw,100px);
+    line-height: .9;
+}
+
+.final h2 span {
+    color: #ff174f;
+}
+
+.surprise-btn {
+    margin-top: 35px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: 1px solid #ff174f;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.surprise-btn:hover {
+    background: #ff174f;
+    box-shadow: 0 0 40px rgba(255,23,79,.4);
+}
+
+.final-message {
+    display: none;
+    margin-top: 35px;
+    animation: fadeIn 1.5s ease;
+}
+
+.final-message.show {
+    display: block;
+}
+
+.final-message h3 {
+    color: #ff416c;
+    font-size: 42px;
+}
+
+.final-message p {
+    color: #ccc;
+    margin-top: 15px;
+    line-height: 1.8;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #151515;
+    color: #666;
+    font-size: 12px;
+}
+
+footer span {
+    color: #ff174f;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:800px) {
+    .before-after,
+    .memories {
+        grid-template-columns: 1fr;
+    }
+
+    .reasons {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .little-things {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .read-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:500px) {
+    section {
+        padding: 75px 6%;
+    }
+
+    .reasons,
+    .little-things,
+    .read-grid,
+    .counter {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .memory img {
+        height: 250px;
+    }
+
+    .letter {
+        padding: 30px 22px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="heart-main">♥</div>
+        <div class="small-title">a tiny website for someone very special</div>
+
+        <h1>For My <span>Cutie</span><br>Pookie</h1>
+
+        <div class="hero-date">
+            01 AUGUST 2023 • 12:00 AM
+        </div>
+
+        <p class="hero-subtitle">
+            The night my story with you began.
+            And somehow, I still wouldn't change a single thing.
+        </p>
+
+        <a href="#beginning" class="scroll-btn">open our little world ↓</a>
+    </div>
+</section>
+
+
+<!-- BEGINNING -->
+
+<section id="beginning">
+    <h2 class="section-title">Our <span>Beginning</span></h2>
+
+    <p class="section-subtitle">
+        Some moments look ordinary when they happen.
+        Then later, you realize they quietly changed everything.
+    </p>
+
+    <div class="beginning-box">
+
+        <div class="timeline-item">
+            <div class="timeline-date">01 August 2023 • 12:00 AM</div>
+            <h3>The Beginning</h3>
+            <p>
+                This is where our little story officially begins.
+                One moment. One conversation. One person who would
+                slowly become such a special part of my life.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">after that</div>
+            <h3>And Then...</h3>
+            <p>
+                Somehow there were more conversations, more memories,
+                more laughs, more random moments and more reasons
+                to care about you.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">today</div>
+            <h3>Still Here ♡</h3>
+            <p>
+                And after everything, here we are.
+                Still making memories. Still choosing to care.
+                Still having a story worth remembering.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- BEFORE / AFTER -->
+
+<section>
+    <h2 class="section-title">Before You <span>♡</span> After You</h2>
+
+    <p class="section-subtitle">
+        Not everything changed dramatically.
+        Some things just became a little warmer.
+    </p>
+
+    <div class="before-after">
+
+        <div class="ba-card">
+            <div class="emoji">☁️</div>
+            <h3>Before You</h3>
+            <p>
+                Just me, doing my own thing,
+                completely unaware that someone
+                like you would become so important.
+            </p>
+        </div>
+
+        <div class="ba-card">
+            <div class="emoji">❤️</div>
+            <h3>After You</h3>
+            <p>
+                More memories, more smiles,
+                someone to think about at random times,
+                and a whole collection of moments
+                I wouldn't want to lose.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- LOVE LETTER -->
+
+<section>
+    <h2 class="section-title">My <span>Letter</span> To You</h2>
+
+    <p class="section-subtitle">
+        Okay... this is the part where I get a little emotional.
+    </p>
+
+    <div class="letter">
+
+        <h3>To my cutie pookie,</h3>
+
+        <p>
+            I don't think I can fit everything I feel into one little
+            website, but I still wanted to try.
+        </p>
+
+        <p>
+            Since that night on August 1st, 2023 at 12:00 AM,
+            you've become a part of so many of my thoughts,
+            memories and little moments.
+        </p>
+
+        <p>
+            I love the random conversations, the stupid jokes,
+            the moments where we laugh over absolutely nothing,
+            and even the little things that probably don't seem
+            important to anyone else.
+        </p>
+
+        <p>
+            You matter to me in a way that's difficult to explain.
+            There are people you meet and remember, and then there
+            are people who become part of your story.
+            You're part of mine.
+        </p>
+
+        <p>
+            I know we're not perfect. We have our misunderstandings,
+            our arguments, our dramatic moments and our very human
+            flaws. But even through those moments, I still care.
+            A lot.
+        </p>
+
+        <p>
+            So today I just wanted to give you something small
+            that says something very big:
+            <br><br>
+            <b>You are loved. You are appreciated. And you mean so much to me.</b>
+        </p>
+
+        <div class="signature">
+            always, ♡
+        </div>
+
+    </div>
+</section>
+
+
+<!-- REASONS -->
+
+<section>
+    <h2 class="section-title">Little <span>Reasons</span></h2>
+
+    <p class="section-subtitle">
+        A few of the many tiny things that make you, you.
+    </p>
+
+    <div class="reasons">
+
+        <div class="reason">
+            <div class="reason-number">01</div>
+            <h3>Your presence</h3>
+            <p>Somehow even knowing you're there can make an ordinary day feel different.</p>
+        </div>
+
+        <div class="reason">
+            <div class="reason-number">02</div>
+            <h3>Your silly side</h3>
+            <p>The random moments and nonsense that somehow become my favorite memories.</p>
+        </div>
+
+        <div class="reason">
+            <div class="reason-number">03</div>
+            <h3>The little things</h3>
+            <p>The tiny details that probably don't seem important but somehow stay with me.</p>
+        </div>
+
+        <div class="reason">
+            <div class="reason-number">04</div>
+            <h3>Your patience</h3>
+            <p>For staying through conversations, misunderstandings and all our little moments.</p>
+        </div>
+
+        <div class="reason">
+            <div class="reason-number">05</div>
+            <h3>The memories</h3>
+            <p>Because some memories become special simply because of who was there.</p>
+        </div>
+
+        <div class="reason">
+            <div class="reason-number">06</div>
+            <h3>Just you</h3>
+            <p>Honestly, sometimes there doesn't even need to be a reason.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- MEMORIES -->
+
+<section>
+    <h2 class="section-title">Our <span>Memories</span></h2>
+
+    <p class="section-subtitle">
+        Ten little spaces waiting for our favorite pictures.
+    </p>
+
+    <div class="memories">
+
+        <div class="memory">
+            <img src="photo1.jpg" alt="Memory 1">
+            <div class="memory-info">
+                <small>MEMORY 01</small>
+                <h3>Our beginning</h3>
+                <p>The start of everything ♡</p>
+            </div>
+        </div>
+
+        <div class="memory">
+            <img src="photo2.jpg" alt="Memory 2">
+            <div class="memory-info">
+                <small>MEMORY 02</small>
+                <h3>A favorite moment</h3>
+                <p>One of those moments I keep remembering.</p>
+            </div>
+        </div>
+
+        <div class="memory">
+            <img src="photo3.jpg" alt="Memory 3">
+            <div class="memory-info">
+                <small>MEMORY 03</small>
+                <h3>That smile</h3>
+                <p>A moment worth keeping forever.</p>
+            </div>
+        </div>
+
+        <div class="memory">
+            <img src="photo4.jpg" alt="Memory 4">
+            <div class="memory-info">
+                <small>MEMORY 04</small>
+                <h3>Us being us</h3>
+                <p>No explanation needed.</p>
+            </div>
+        </div>
+
+        <div class="memory">
+            <img src="photo5.jpg" alt="Memory 5">
+            <div class="memory-info">
+                <small>MEMORY 05</small>
+                <h3>A random day</h3>
+                <p>Ordinary day, special memory.</p>
+            </div>
+        </div>
+
+        <div class="memory">
+            <img src="photo6.jpg" alt="Memory 6">
+            <div class="memory-info">
+                <small>MEMORY 06</small>
+                <h3>Another little memory</h3>
+                <p>Saved here because it matters.</p>
+            </div>
+        </div>
+
+        <div class="memory">
+            <img src="photo7.jpg" alt="Memory 7">
+            <div class="memory-info">
+                <small>MEMORY 07</small>
+                <h3>One I'll never forget</h3>
+                <p>Some moments just stay.</p>
+            </div>
+        </div>
+
+        <div class="memory">
+            <img src="photo8.jpg" alt="Memory 8">
+            <div class="memory-info">
+                <small>MEMORY 08</small>
+                <h3>Our little world</h3>
+                <p>A tiny piece of our story.</p>
+            </div>
+        </div>
+
+        <div class="memory">
+            <img src="photo9.jpg" alt="Memory 9">
+            <div class="memory-info">
+                <small>MEMORY 09</small>
+                <h3>Still smiling</h3>
+                <p>Because this memory deserves a place here.</p>
+            </div>
+        </div>
+
+        <div class="memory">
+            <img src="photo10.jpg" alt="Memory 10">
+            <div class="memory-info">
+                <small>MEMORY 10</small>
+                <h3>Us ♡</h3>
+                <p>And hopefully many more memories to come.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- LITTLE THINGS -->
+
+<section>
+    <h2 class="section-title">Our Little <span>Things</span></h2>
+
+    <p class="section-subtitle">
+        The tiny details that make our story feel like ours.
+    </p>
+
+    <div class="little-things">
+
+        <div class="little">
+            <span>🖤</span>
+            <p>our random conversations</p>
+        </div>
+
+        <div class="little">
+            <span>😭</span>
+            <p>laughing over absolutely nothing</p>
+        </div>
+
+        <div class="little">
+            <span>🌙</span>
+            <p>late-night talks</p>
+        </div>
+
+        <div class="little">
+            <span>💌</span>
+            <p>the little messages</p>
+        </div>
+
+        <div class="little">
+            <span>🫶</span>
+            <p>being there for each other</p>
+        </div>
+
+        <div class="little">
+            <span>🎀</span>
+            <p>our silly nicknames</p>
+        </div>
+
+        <div class="little">
+            <span>✨</span>
+            <p>the unexpected memories</p>
+        </div>
+
+        <div class="little">
+            <span>❤️</span>
+            <p>just... us</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- READ WHEN -->
+
+<section>
+    <h2 class="section-title">Read This <span>When...</span></h2>
+
+    <p class="section-subtitle">
+        Little messages for different versions of you.
+        Click one. ♡
+    </p>
+
+    <div class="read-grid">
+
+        <div class="envelope" onclick="openLetter(0)">
+            <div class="envelope-icon">💌</div>
+            <p>you miss me</p>
+        </div>
+
+        <div class="envelope" onclick="openLetter(1)">
+            <div class="envelope-icon">🖤</div>
+            <p>you're sad</p>
+        </div>
+
+        <div class="envelope" onclick="openLetter(2)">
+            <div class="envelope-icon">🌙</div>
+            <p>you can't sleep</p>
+        </div>
+
+        <div class="envelope" onclick="openLetter(3)">
+            <div class="envelope-icon">🫶</div>
+            <p>you need reassurance</p>
+        </div>
+
+        <div class="envelope" onclick="openLetter(4)">
+            <div class="envelope-icon">💭</div>
+            <p>you're thinking of me</p>
+        </div>
+
+        <div class="envelope" onclick="openLetter(5)">
+            <div class="envelope-icon">🥺</div>
+            <p>we argue</p>
+        </div>
+
+        <div class="envelope" onclick="openLetter(6)">
+            <div class="envelope-icon">❤️</div>
+            <p>you need a reminder</p>
+        </div>
+
+        <div class="envelope" onclick="openLetter(7)">
+            <div class="envelope-icon">🎀</div>
+            <p>you want to feel loved</p>
+        </div>
+
+        <div class="envelope" onclick="openLetter(8)">
+            <div class="envelope-icon">💗</div>
+            <p>you wonder what you mean to me</p>
+        </div>
+
+        <div class="envelope" onclick="openLetter(9)">
+            <div class="envelope-icon">🔐</div>
+            <p>you reach the end</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- MODAL -->
+
+<div class="modal" id="letterModal">
+    <div class="modal-box">
+        <h3 id="modalTitle"></h3>
+        <p id="modalText"></p>
+        <button class="close" onclick="closeLetter()">close ♡</button>
+    </div>
+</div>
+
+
+<!-- MUSIC -->
+
+<section>
+    <h2 class="section-title">Our <span>Song</span></h2>
+
+    <p class="section-subtitle">
+        Press play and let this little website have its own soundtrack.
+    </p>
+
+    <div class="music-box">
+
+        <div class="disc" id="disc"></div>
+
+        <h3>this one is for you</h3>
+        <p>our little soundtrack ♡</p>
+
+        <button class="music-btn" id="musicBtn" onclick="toggleMusic()">▶</button>
+
+        <audio id="song" loop>
+            <source src="song.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+</section>
+
+
+<!-- COUNTER -->
+
+<section>
+    <h2 class="section-title">Since <span>12:00 AM</span></h2>
+
+    <p class="section-subtitle">
+        Look how much time has passed since the beginning.
+    </p>
+
+    <div class="counter">
+
+        <div class="time-box">
+            <strong id="years">0</strong>
+            <span>YEARS</span>
+        </div>
+
+        <div class="time-box">
+            <strong id="days">0</strong>
+            <span>DAYS</span>
+        </div>
+
+        <div class="time-box">
+            <strong id="hours">0</strong>
+            <span>HOURS</span>
+        </div>
+
+        <div class="time-box">
+            <strong id="minutes">0</strong>
+            <span>MINUTES</span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- QUIZ -->
+
+<section>
+    <h2 class="section-title">Do You <span>Remember?</span></h2>
+
+    <p class="section-subtitle">
+        A tiny little test... let's see if you remember our story. 👀
+    </p>
+
+    <div class="quiz">
+
+        <div class="question">
+            <h3>01. When did our story begin?</h3>
+            <button class="answer-btn" onclick="showAnswer(0)">show answer</button>
+            <div class="answer" id="answer0">
+                01 August 2023 at exactly 12:00 AM. ❤️
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>02. What do I call you?</h3>
+            <button class="answer-btn" onclick="showAnswer(1)">show answer</button>
+            <div class="answer" id="answer1">
+                My cutie pookie, obviously. 😭❤️
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>03. What is this website?</h3>
+            <button class="answer-btn" onclick="showAnswer(2)">show answer</button>
+            <div class="answer" id="answer2">
+                A tiny digital scrapbook made because you deserve something special. ♡
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>04. What happens after this website ends?</h3>
+            <button class="answer-btn" onclick="showAnswer(3)">show answer</button>
+            <div class="answer" id="answer3">
+                Hopefully... we keep making memories worth putting on the next version. 🖤
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FUTURE -->
+
+<section>
+    <div class="future-box">
+
+        <div class="heart-main">♡</div>
+
+        <h2>One Day...</h2>
+
+        <p>
+            There will be so many more memories that these ten photos
+            won't even be enough. More random days, more conversations,
+            more stories, more moments that we'll look back on and smile at.
+        </p>
+
+        <p>
+            So this isn't really the end of our scrapbook.
+            It's just one little page in it.
+        </p>
+
+    </div>
+</section>
+
+
+<!-- FINAL -->
+
+<section class="final">
+
+    <div class="final-content">
+
+        <div class="small-title">wait...</div>
+
+        <h2>
+            There's <span>one</span><br>
+            more thing.
+        </h2>
+
+        <button class="surprise-btn" onclick="showFinal()">
+            open it ♡
+        </button>
+
+        <div class="final-message" id="finalMessage">
+
+            <div class="heart-main">♥</div>
+
+            <h3>Happy Boyfriend Day, my cutie pookie.</h3>
+
+            <p>
+                Thank you for being part of my story.
+                Thank you for every memory, every laugh,
+                every conversation and every little moment.
+            </p>
+
+            <p>
+                From 01 August 2023 at 12:00 AM...
+                to every moment after it —
+                I'm really glad our paths crossed.
+            </p>
+
+            <p>
+                I love you. ♡
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+    made with <span>♥</span> for my cutie pookie
+    <br><br>
+    01.08.2023 — forever in this little corner of the internet
+</footer>
+
+
+<script>
+
+/* FLOATING HEARTS */
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    const hearts = ["♥","♡","❤","💗","💕"];
+
+    heart.innerText = hearts[Math.floor(Math.random()*hearts.length)];
+
+    heart.style.left = Math.random()*100 + "vw";
+
+    heart.style.fontSize = (12 + Math.random()*20) + "px";
+
+    heart.style.animationDuration = (5 + Math.random()*5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 10000);
+}
+
+setInterval(createHeart, 700);
+
+
+/* READ WHEN LETTERS */
+
+const letters = [
+
+    {
+        title: "When You Miss Me ♡",
+        text: "If you miss me, just remember that somewhere out there I'm probably thinking about you too. Distance doesn't erase the little moments we've shared. Close your eyes, smile for a second, and remember that you're very loved."
+    },
+
+    {
+        title: "When You're Sad 🖤",
+        text: "You don't have to be okay every second. Whatever kind of day you're having, I hope you remember that one bad moment doesn't define everything. Be gentle with yourself. You matter."
+    },
+
+    {
+        title: "When You Can't Sleep 🌙",
+        text: "It's late, you're still awake, and somehow you're reading this. So here's your reminder to breathe, relax, and let your mind rest. Goodnight, pookie. I hope tomorrow is softer."
+    },
+
+    {
+        title: "When You Need Reassurance 🫶",
+        text: "In case your brain is being annoying today: yes, you matter to me. Yes, I care about you. And yes, our memories mean something to me. Don't let one difficult moment make you forget all the good ones."
+    },
+
+    {
+        title: "When You're Thinking About Me 💭",
+        text: "Well... hi. Since you're thinking about me anyway, just know that I'm smiling knowing you opened this. Here's a tiny invisible hug and a reminder that you're special to me."
+    },
+
+    {
+        title: "When We Argue 🥺",
+        text: "Even when we're annoyed at each other, I don't suddenly stop caring. Arguments are moments, not the entire story. I hope we always find our way back to understanding each other."
+    },
+
+    {
+        title: "When You Need A Reminder ❤️",
+        text: "You are appreciated more than you probably realize. Thank you for the conversations, the memories, the patience, the laughs and simply for being part of my life."
+    },
+
+    {
+        title: "When You Want To Feel Loved 🎀",
+        text: "Consider this your tiny reminder: you are loved, cared about and remembered. You have a permanent little corner in this website for a reason."
+    },
+
+    {
+        title: "When You Wonder What You Mean To Me 💗",
+        text: "You mean memories. You mean late-night conversations. You mean random smiles. You mean someone whose name can change my mood in seconds. You mean a lot."
+    },
+
+    {
+        title: "When You Reach The End 🔐",
+        text: "If you're reading this, you made it through the whole thing. But honestly, this isn't really an ending. It's just the end of this tiny website. Our story gets to keep going."
+    }
+
+];
+
+function openLetter(index) {
+
+    document.getElementById("modalTitle").innerText = letters[index].title;
+
+    document.getElementById("modalText").innerText = letters[index].text;
+
+    document.getElementById("letterModal").classList.add("active");
+}
+
+function closeLetter() {
+    document.getElementById("letterModal").classList.remove("active");
+}
+
+document.getElementById("letterModal").addEventListener("click", function(e) {
+
+    if(e.target === this) {
+        closeLetter();
+    }
+
+});
+
+
+/* MUSIC */
+
+const song = document.getElementById("song");
+const musicBtn = document.getElementById("musicBtn");
+const disc = document.getElementById("disc");
+
+function toggleMusic() {
+
+    if(song.paused) {
+
+        song.play();
+
+        musicBtn.innerText = "Ⅱ";
+
+        disc.classList.add("playing");
+
+    } else {
+
+        song.pause();
+
+        musicBtn.innerText = "▶";
+
+        disc.classList.remove("playing");
+
+    }
+
+}
+
+
+/* LIVE COUNTER */
+
+function updateCounter() {
+
+    const start = new Date("2023-08-01T00:00:00+05:00");
+
+    const now = new Date();
+
+    let difference = now - start;
+
+    let totalSeconds = Math.floor(difference / 1000);
+
+    let minutesTotal = Math.floor(totalSeconds / 60);
+
+    let hoursTotal = Math.floor(minutesTotal / 60);
+
+    let daysTotal = Math.floor(hoursTotal / 24);
+
+    let years = Math.floor(daysTotal / 365.25);
+
+    let remainingDays = Math.floor(daysTotal - (years * 365.25));
+
+    let hours = hoursTotal % 24;
+
+    let minutes = minutesTotal % 60;
+
+    document.getElementById("years").innerText = years;
+
+    document.getElementById("days").innerText = remainingDays;
+
+    document.getElementById("hours").innerText = hours;
+
+    document.getElementById("minutes").innerText = minutes;
+
+}
+
+updateCounter();
+
+setInterval(updateCounter, 1000);
+
+
+/* QUIZ */
+
+function showAnswer(index) {
+
+    document.getElementById("answer" + index).classList.toggle("show");
+
+}
+
+
+/* FINAL SURPRISE */
+
+function showFinal() {
+
+    document.getElementById("finalMessage").classList.add("show");
+
+    for(let i = 0; i < 25; i++) {
+
+        setTimeout(() => {
+            createHeart();
+        }, i * 100);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>+
